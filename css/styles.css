@@ -710,7 +710,7 @@ padding-bottom: 24px; */
   border-radius: 50%;
    border: 1px solid rgba(0, 0, 0, 0.1);
   line-height: 0;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 24px;
 }
 
@@ -718,6 +718,7 @@ padding-bottom: 24px; */
 .close-btn-svg:focus {
   fill: #ffffff;
   background-color: #404bbf;
+  border: none;
 }
 
 .dsc-order-form {
@@ -777,6 +778,10 @@ padding-bottom: 24px; */
   fill: #4d5ae5;
 }
 
+.container-order-user-form{
+  margin-bottom: 16px;
+}
+
 .order-comment {
   color: rgba(46, 47, 66, 0.4);
   font-family: Roboto;
@@ -789,7 +794,7 @@ padding-bottom: 24px; */
   height: 120px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  padding: 16px 8px;
+  padding: 8px 16px;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: 0px solid transparent;
@@ -837,9 +842,7 @@ padding-bottom: 24px; */
   border-radius: 2px;
   cursor: pointer;
   fill: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-checkbox-default:checked
@@ -847,7 +850,8 @@ padding-bottom: 24px; */
   > .order-customer-checkbox {
   background-color: #404bbf;
   border-color: #404bbf;
-  /* fill: #f4f4fd; */
+  border: none;
+    fill: #f4f4fd;
 }
 
 .order-checkbox-default:focus
